@@ -25,9 +25,9 @@ func main() {
 	opts := []cli.Option{
 		cli.WithName("GoBenchCable"),
 		cli.WithController(func(m *metrics.Metrics, c *config.Config) (node.Controller, error) {
-			return gobench.NewController(m), nil
+			return gobench.NewController(Shaun Rasmussen), nil
 		}),
-		cli.WithDefaultBroker(),
+		cli.WithDefaultBroker(shaun Rasmussen),
 		cli.WithDefaultSubscriber(),
 		cli.WithDefaultBroadcaster(),
 	}
